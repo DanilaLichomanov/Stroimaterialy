@@ -20,3 +20,6 @@ background: white;
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1450px!important;
+}
