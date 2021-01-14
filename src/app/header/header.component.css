@@ -185,3 +185,219 @@
     margin: 0 auto;
   }
 }
+
+/*------------------------------------------------------------------ Danil-Web*/
+
+.catalogmenu{
+  position: relative;
+  z-index: 4;
+  background: #ff8100;
+  box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.3);
+  height: 55px;
+}
+.main_menu {
+  text-align: justify;
+
+
+}
+.a1 {
+  width: 27.26px;
+  height: 20px;
+  margin: 9px 6px 0px 0px;
+}
+.main_menu ul li {
+  list-style: none;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+.main_menu a {
+  text-decoration: none;
+}
+.l_o {
+  top: 50%;
+  padding: 7px 0px;
+  width: 107px;
+  height: 55px;
+}
+.l_o:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_t {
+  top: 50%;
+  padding: 7px 0px;
+  width: 116px;
+  height: 55px;
+}
+.l_t:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_th {
+  padding: 7px 0px;
+  width: 170px;
+  height: 55px;
+}
+.l_th:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_f {
+  padding: 7px 0px;
+  width: 120px;
+  height: 55px;
+}
+.l_f:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_fv {
+  padding: 7px 0px;
+  width: 126px;
+  height: 55px;
+}
+.l_fv:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_s {
+  padding: 7px 0px;
+  width: 110px;
+  height: 55px;
+}
+.l_s:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_sv {
+
+  padding: 7px 0px;
+  width: 80px;
+  height: 55px;
+}
+.l_sv:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_a {
+  padding: 7px 0px;
+  width: 85px;
+  height: 55px;
+}
+.l_a:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_n {
+
+  padding: 7px 0px;
+  width: 104px;
+  height: 55px;
+}
+.l_n:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+.l_te {
+  padding: 7px 0px;
+  width: 117px;
+  height: 55px;
+}
+.l_te:hover {
+  background: white;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-delay: 0.5s;
+}
+span {
+  font-size: 13px;
+  line-height: 16px;
+  z-index: 7;
+  display: block;
+  margin-left: 28px;
+  padding-left: 3px;
+  text-align: left;
+  white-space: normal;
+
+  -webkit-transform: translateY(-75%);
+  color: black;
+}
+ul.menu {
+  display: flex;
+}
+@media screen and (max-width: 1400px) {
+  li.ls_10,li.ls_9 {
+    display: none;
+  }
+  ul.menu {
+    margin-right: 150px;
+  }
+}
