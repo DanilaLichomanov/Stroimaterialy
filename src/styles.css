@@ -18,3 +18,6 @@ line-height: 1.35;
 .container {
   max-width: 1450px!important;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
