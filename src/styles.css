@@ -6,12 +6,7 @@ html, body {
 font-family: "Arial", sans-serif;
 font-size: 15px;
 line-height: 1.35;
-min-width: 1024px;
-height: 100%;
-color: #272727;
-background: white;
 -webkit-font-smoothing: antialiased;
-
 }
 
 * {
