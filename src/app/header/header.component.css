@@ -392,6 +392,7 @@ span {
 }
 ul.menu {
   display: flex;
+  margin-bottom: 0px!important;
 }
 @media screen and (max-width: 1400px) {
   li.ls_10,li.ls_9 {
@@ -401,3 +402,4 @@ ul.menu {
     margin-right: 150px;
   }
 }
+

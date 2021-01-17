@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SidebarModule} from 'ng-sidebar';
-import {RouterModule} from "@angular/router";
-import { HeaderComponent } from "./header/header.component";
+import {RouterModule} from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { HeaderComponent } from "./header/header.component";
     BrowserModule,
     NgbModule,
     SidebarModule.forRoot(),
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
