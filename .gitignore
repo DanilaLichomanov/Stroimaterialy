@@ -44,3 +44,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+contacts/.idea/.gitignore
+contacts/.idea/contacts.iml
+contacts/.idea/misc.xml
+contacts/.idea/modules.xml
+contacts/.idea/vcs.xml

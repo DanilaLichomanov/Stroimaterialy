@@ -5,13 +5,21 @@
         <div class="row">
           <div class="col-lg-8 col-12">
             <div class="descriptor__content">
-              <div class="descriptor__city">Белгород
-                <svg class="descriptor__city-icon" viewBox="0 0 24 24">
-                  <circle id="primary" cx="12" cy="12" r="9" style="fill: none; stroke: rgb(255,255,255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle>
-                  <polyline id="secondary" points="9 11 12 14 15 11" style="fill: none; stroke: rgb(240,189,181); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
-                </svg>
-                <div class="descriptor__city-wind">Курск</div>
-              </div>
+              <!--              <div [matMenuTriggerFor]="belowMenu">Below</div>-->
+              <!--              <mat-menu #belowMenu="matMenu" yPosition="below">-->
+              <!--                <button mat-menu-item>Item 1</button>-->
+              <!--                <button mat-menu-item>Item 2</button>-->
+              <!--              </mat-menu>-->
+
+              <div class="descriptor__city" [matMenuTriggerFor]="belowMenu">Белгород<svg class="descriptor__city-icon" viewBox="0 0 24 24">
+                  <circle id="primary" cx="12" cy="12" r="9"
+                          style="fill: none; stroke: rgb(255,255,255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle>
+                  <polyline id="secondary" points="9 11 12 14 15 11"
+                            style="fill: none; stroke: rgb(240,189,181); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
+                </svg></div>
+              <mat-menu #belowMenu="matMenu" yPosition="below">
+                <button mat-menu-item>Курск</button>
+              </mat-menu>
               <div class="descriptor__nav">
                 <a href="#" class="descriptor__nav-link">О компании</a>
                 <a href="#" class="descriptor__nav-link">Сотрудники</a>
@@ -212,3 +220,10 @@ C36.9,45.2,37.4,44.7,37.4,44.1z"></path></g></svg>
     </div>
   </div>
 </section>
+
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>

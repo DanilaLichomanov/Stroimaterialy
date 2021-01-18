@@ -24,37 +24,6 @@
   width: 20px;
   height: 20px;
 }
-.descriptor__city-wind {
-  position: absolute;
-  color: #333;
-  width: 70%;
-  height: 120%;
-  display: none;
-  align-items: center;
-  border-radius: 3px;
-  padding-left: 5px;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  z-index: 10;
-  transition: .5s;
-}
-.descriptor__city-wind:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  background: #ffffff;
-  right: 4px;
-  top: -2px;
-  transition: .5s;
-}
-.descriptor__city-wind.active {
-  display: flex;
-  transition: .5s;
-}
 .descriptor__nav-link {
   color: #ffffff;
   padding: 7px;
@@ -277,4 +246,19 @@ ul.menu {
   .dn5 {
     display: none;
   }
+}
+
+
+.my-test {
+  color: #444;
+}
+
+.mat-focu
+.mat-menu-content *, mat-menu-content *:hover, mat-menu-content *:focus, .mat-menu-content {
+  outline: none;
+  border: 0;
+  pointer-events: none;
+}
+button:focus {
+  outline: none;
 }
