@@ -1,1 +1,13 @@
-Hello
+<div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide [dataMerge]="1" [width]=4>
+    <img src="../../assets/img/logo_gc.svg">
+  </ng-template>
+  <ng-template carouselSlide [dataMerge]="2" [width]="2">
+    <img src="../../assets/img/logo_gc.svg">
+  </ng-template>
+  <ng-template carouselSlide [dataMerge]="3" [width]="1">
+    <img src="../../assets/img/logo_gc.svg">
+  </ng-template>
+</owl-carousel-o>
+<div>Some tags after</div>
