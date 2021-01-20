@@ -11,12 +11,14 @@ import { MaterialModule } from './material.module';
 
 import { HeaderComponent } from './header/header.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { MainSliderComponent } from './main-slider/main-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CatalogComponent
+    CatalogComponent,
+    MainSliderComponent
   ],
   imports: [
     BrowserModule,
