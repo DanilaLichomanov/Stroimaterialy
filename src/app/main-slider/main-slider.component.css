@@ -2,4 +2,44 @@
   overflow: hidden;
   display: flex;
 }
+.carousel__item_one {
+  position: relative;
+  background-color: #00123d;
+}
+.carousel__item_two {
+  background-color: #003d3b;
+}
+.carousel__item_three {
+  background-color: #d9d5d2;
+}
+.carousel__item img {
+  width: 140%!important;
+  transform: translateX(-20%);
+}
 
+.carousel__content {
+  background: rgba(255, 255, 255, 0.6);
+  border-right: solid 10px #ffffff;
+  height: 100%;
+  transform: skew(-20deg,0deg);
+}
+
+.carousel__offer {
+  transform: skew(20deg,0deg);
+  padding: 70px 0 0 50px;
+}
+
+.carousel__title {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.carousel__subtitle {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+::ng-deep .active {
+  z-index: 100;
+}

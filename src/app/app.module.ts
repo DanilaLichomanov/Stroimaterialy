@@ -13,13 +13,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HeaderComponent } from './header/header.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { MainSliderComponent } from './main-slider/main-slider.component';
+import { AddCatalogComponent } from './add-catalog/add-catalog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CatalogComponent,
-    MainSliderComponent
+    MainSliderComponent,
+    AddCatalogComponent
   ],
   imports: [
     BrowserModule,

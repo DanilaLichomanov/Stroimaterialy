@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="catalog">
+    <div class="col-12">
+      <div class="title-add-product">Добавить в каталог наименование товара</div>
+      <form>
+        <label>
+          <p class="add__label">В какую категорию?</p>
+          <input class="add__input" (input)="twoInput($event)">
+        </label>
+        <label>
+          <p class="add__label">Введите название товара</p>
+          <input class="add__input" (input)="onInput($event)">
+        </label>
+        <button (click)="addCategory()" type="button">Добавить DIV</button>
+      </form>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6">
+          <div class="category-one category-market">Салфетки</div>
+          <div *ngFor="let cat of categoryOneArr">{{ cat.nameProd }}</div>
+        </div>
+        <div class="col-6">
+          <div class="category-two category-market">Кружки</div>
+          <div *ngFor="let cat2 of categoryTwoArr">{{ cat2.nameProd }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
