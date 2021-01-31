@@ -1,11 +1,20 @@
-.catalog {
-  padding: 30px 50px 100px;
+.block-add-catalog {
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.title-add-product {
+.catalog-title {
   font-size: 24px;
   padding-bottom: 15px;
   font-weight: 600;
+}
+
+.category {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  background-color: #eeeeee;
+  padding: 10px;
 }
 
 .add__label {
@@ -13,7 +22,31 @@
   margin: 0;
 }
 
-.category-market {
+.category-title {
+  padding-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
+}
+
+.add__span-delete {
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  color: #ffffff;
+  padding: 0 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.catalog__form {
+  padding-bottom: 30px;
+}
+
+::ng-deep .mat-form-field {
+  display: block !important;
+  width: 250px;
+}
+
+button {
+  outline: none !important;
 }

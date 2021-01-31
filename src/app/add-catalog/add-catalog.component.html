@@ -1,30 +1,45 @@
-<div class="container">
-  <div class="catalog">
-    <div class="col-12">
-      <div class="title-add-product">Добавить в каталог наименование товара</div>
-      <form>
-        <label>
-          <p class="add__label">В какую категорию?</p>
-          <input class="add__input" (input)="twoInput($event)">
-        </label>
-        <label>
-          <p class="add__label">Введите название товара</p>
-          <input class="add__input" (input)="onInput($event)">
-        </label>
-        <button (click)="addCategory()" type="button">Добавить DIV</button>
-      </form>
-    </div>
-    <div class="col-12">
+<div class="block-add-catalog">
+  <div class="container">
+    <div class="catalog-title">Добавить в каталог наименование товара</div>
+    <form class="catalog__form">
+      <mat-form-field>
+        <mat-label>Выберете категорию</mat-label>
+        <input matInput #categoryData>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Добавьте товар</mat-label>
+        <input matInput #prodData (keyup.enter)="addCategory(prodData, categoryData)">
+      </mat-form-field>
+      <button mat-raised-button (click)="addCategory(prodData, categoryData)" type="button">Добавить</button>
+    </form>
+
+    <div class="catalog">
       <div class="row">
-        <div class="col-6">
-          <div class="category-one category-market">Салфетки</div>
-          <div *ngFor="let cat of categoryOneArr">{{ cat.nameProd }}</div>
+        <div class="col-3">
+          <div class="category">
+            <div class="category-one category-title">Салфетки</div>
+            <div *ngFor="let cat of categoryOneArr; let i = index"><span class="add__span-delete"
+                                                                         (click)="deleteProd(i)">
+            <svg width="15" height="15" viewBox="0 0 24 24">
+              <line id="secondary" x1="16.24" y1="12" x2="7.76" y2="12"
+                    style="fill: none; stroke: rgb(240, 90, 40); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line>
+              <circle id="primary" cx="12" cy="12" r="9"
+                      style="fill: none; stroke: rgb(101, 45, 144); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle>
+            </svg>
+          </span>{{ i + 1 }}. {{ cat.nameProd }}</div>
+          </div>
         </div>
-        <div class="col-6">
-          <div class="category-two category-market">Кружки</div>
-          <div *ngFor="let cat2 of categoryTwoArr">{{ cat2.nameProd }}</div>
+        <div class="col-3">
+          <div class="category">
+            <div class="category-two category-title">Кружки</div>
+            <div *ngFor="let cat2 of categoryTwoArr">{{ cat2.nameProd }}</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!--<p #userName>{{myName}}</p>-->
+<!--<p>{{userName}}</p>-->
+<!--<input type="text" [(ngModel)]="myName" />-->

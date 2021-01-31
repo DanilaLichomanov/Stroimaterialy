@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
+// Input - принимаем значение из других компонентов, ViewChild - пользуемся #... - ссылка на HTML эл. в код ts
 @Component({
   selector: 'app-add-catalog',
   templateUrl: './add-catalog.component.html',
@@ -20,24 +21,18 @@ export class AddCatalogComponent {
     {nameProd: 'Для похода'}
   ];
   // Методы
-  // Этот метод вызывается при взаимодействии с input для ПРОДУКТА
-  onInput(event: any) {
-    this.categoryValue = event.target.value;
-    return this.categoryValue;
-  }
-  // Этот метод вызывается при взаимодействии с input для КАТЕГОРИИ
-  twoInput(event: any) {
-    this.valueCategoryInp = event.target.value;
-    return this.categoryValue;
-  }
-  // На кнопке висит событие addCategory, чтобы добавить категорию, а текст в категории берется из инпута.
-  addCategory() {
-    if (this.valueCategoryInp.toLowerCase() === 'салфетки') {
-      this.categoryOneArr[this.categoryOneArr.length] = {nameProd: this.categoryValue};
-    } else if (this.valueCategoryInp.toLowerCase() === 'кружки') {
-      this.categoryTwoArr[this.categoryTwoArr.length] = {nameProd: this.categoryValue};
+  addCategory(dataProd: HTMLInputElement, dataCategory: HTMLInputElement) {
+    if (dataCategory.value.toLowerCase() === 'салфетки') {
+      this.categoryOneArr[this.categoryOneArr.length] = {nameProd: dataProd.value};
+    } else if (dataCategory.value.toLowerCase() === 'кружки') {
+      this.categoryTwoArr[this.categoryTwoArr.length] = {nameProd: dataProd.value};
     } else {
       console.log('Шот не так');
     }
+  }
+
+  // Удаление продукта
+  deleteProd(indexProd: number) {
+    this.categoryOneArr = this.categoryOneArr.filter((item, index) => index !== indexProd);
   }
 }

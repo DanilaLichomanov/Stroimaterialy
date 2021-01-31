@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarModule } from 'ng-sidebar';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -30,7 +31,8 @@ import { AddCatalogComponent } from './add-catalog/add-catalog.component';
     RouterModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
