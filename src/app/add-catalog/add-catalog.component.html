@@ -9,7 +9,7 @@
       </mat-form-field>
       <mat-form-field>
         <mat-label>Добавьте товар</mat-label>
-        <input matInput #inputProd (keyup.enter)="addCategory(prodData.value.toLowerCase(), categoryData.value.toLowerCase())">
+        <input matInput #inputProd (keyup.enter)="addCategory(inputCategory.value.toLowerCase(), inputProd.value.toLowerCase())">
       </mat-form-field>
       <button mat-raised-button (click)="addCategory(inputCategory.value.toLowerCase(), inputProd.value.toLowerCase())" type="button">Добавить</button>
     </form>
