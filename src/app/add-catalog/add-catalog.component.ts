@@ -1,38 +1,43 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 
-// Input - принимаем значение из других компонентов, ViewChild - пользуемся #... - ссылка на HTML эл. в код ts
+export interface Category {
+  name: string;
+  subCategories: { name: string, quantity: number } [];
+}
+
 @Component({
   selector: 'app-add-catalog',
   templateUrl: './add-catalog.component.html',
   styleUrls: ['./add-catalog.component.css']
 })
+
 export class AddCatalogComponent {
-  constructor() {}
-  // Переменные
-  categoryValue = '';
-  valueCategoryInp = '';
-  // Массивы для категорий
-  categoryOneArr = [
-    {nameProd: 'Влажные'},
-    {nameProd: 'Дешевые'}
-  ];
-  categoryTwoArr = [
-    {nameProd: 'Для дома'},
-    {nameProd: 'Для похода'}
-  ];
-  // Методы
-  addCategory(dataProd: HTMLInputElement, dataCategory: HTMLInputElement) {
-    if (dataCategory.value.toLowerCase() === 'салфетки') {
-      this.categoryOneArr[this.categoryOneArr.length] = {nameProd: dataProd.value};
-    } else if (dataCategory.value.toLowerCase() === 'кружки') {
-      this.categoryTwoArr[this.categoryTwoArr.length] = {nameProd: dataProd.value};
-    } else {
-      console.log('Шот не так');
-    }
+  constructor() {
   }
 
-  // Удаление продукта
-  deleteProd(indexProd: number) {
-    this.categoryOneArr = this.categoryOneArr.filter((item, index) => index !== indexProd);
+  // Массив категорий
+  categories = [
+    {
+      name: 'Отделочные материалы', subCategories: [
+        {name: 'Гипсокартон и комплектующие', quantity: 1},
+        {name: 'Листовые материалы', quantity: 1},
+      ]
+    },
+    {
+      name: 'Строительные материалы', subCategories: [
+        {name: 'Блоки и кирпич', quantity: 1},
+        {name: 'Металлопрокат', quantity: 1},
+        {name: 'Полиматериалы', quantity: 1},
+      ]
+    },
+  ];
+
+  // Методы
+  addCategory(categoryName: string, subCategoryName: string) {
+    this.categories.forEach((category: Category) => {
+      if (categoryName === category.name.toLowerCase()) {
+        category.subCategories.push({name: subCategoryName, quantity: 1});
+      }
+    });
   }
 }

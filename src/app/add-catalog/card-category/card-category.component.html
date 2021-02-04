@@ -1,0 +1,6 @@
+<div class="category">
+  <div class="category-title">{{ thisCategory.name }}</div>
+  <div *ngFor="let subCategory of thisCategory.subCategories; let i = index">
+    <div>{{ i + 1 }}. {{ subCategory.name }}</div>
+  </div>
+</div>

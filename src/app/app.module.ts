@@ -15,15 +15,17 @@ import { HeaderComponent } from './header/header.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { MainSliderComponent } from './main-slider/main-slider.component';
 import { AddCatalogComponent } from './add-catalog/add-catalog.component';
+import { CardCategoryComponent } from './add-catalog/card-category/card-category.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    CatalogComponent,
-    MainSliderComponent,
-    AddCatalogComponent
-  ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        CatalogComponent,
+        MainSliderComponent,
+        AddCatalogComponent,
+        CardCategoryComponent
+    ],
   imports: [
     BrowserModule,
     NgbModule,
