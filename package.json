@@ -28,7 +28,8 @@
     "ng-sidebar": "^9.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "ngx-owl-carousel-o": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",

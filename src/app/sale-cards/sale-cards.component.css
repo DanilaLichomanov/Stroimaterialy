@@ -145,6 +145,10 @@
   background-color: #272727;
   color: white;
 }
+.sale__block_buy-link {
+  text-decoration: none;
+  color: black;
+}
 
 @media (max-width: 1200px) {
   .sale__block-first {
@@ -159,9 +163,11 @@
 
 
 
+
 /* Карточки */
 .sale__card {
   padding: 20px;
+  border-radius: 0;
 }
 .sale__card_img {
 position: relative;
@@ -226,7 +232,7 @@ margin-bottom: 14px;
   color: #616770;
 
 }
-.sale__block-сurrency_oldprice {
+.sale__card-сurrency_oldprice {
   font-size: 15px;
   font-weight: 700;
   display: inline;
@@ -248,5 +254,25 @@ margin-bottom: 14px;
 .card_one {
   font-weight: 500;
 }
+.sale__card-button {
+  background-color: #ff8100;
+  height: 40px;
+  width: 132px;
+  border: 0;
+  border-radius: 0;
+}
+.sale__block_buy-link {
+  text-decoration: none;
+  color: black;
+}
+.sale__card-button:hover {
+  background-color: orange;
+  -webkit-transition: .4s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition: .4s ease-out;
+  -o-transition-delay: 0.5s;
+  -moz-transition: .4s ease-out;
+  -moz-transition-delay: 0.5s;
+  transition: .4s ease-out;
 
-
+}
