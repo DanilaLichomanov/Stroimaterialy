@@ -12,23 +12,38 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.7",
+<<<<<<< HEAD
     "@angular/cdk": "~9.2.1",
+=======
+    "@angular/cdk": "^9.2.4",
+>>>>>>> e116c9611d380eece8764d0aabca036aee43da27
     "@angular/common": "~9.0.7",
     "@angular/compiler": "~9.0.7",
     "@angular/core": "~9.0.7",
     "@angular/forms": "~9.0.7",
     "@angular/localize": "~9.0.7",
+<<<<<<< HEAD
     "@angular/material": "~9.2.1",
+=======
+    "@angular/material": "^9.2.4",
+>>>>>>> e116c9611d380eece8764d0aabca036aee43da27
     "@angular/platform-browser": "~9.0.7",
     "@angular/platform-browser-dynamic": "~9.0.7",
     "@angular/router": "~9.0.7",
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
     "bootstrap": "^4.5.3",
+    "hammerjs": "^2.0.8",
     "ng-sidebar": "^9.2.0",
     "ngx-owl-carousel-o": "^5.0.0",
     "rxjs": "~6.5.4",
+<<<<<<< HEAD
     "tslib": "^1.14.1",
     "zone.js": "~0.10.2"
+=======
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2",
+    "ngx-owl-carousel-o": "latest"
+>>>>>>> e116c9611d380eece8764d0aabca036aee43da27
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",

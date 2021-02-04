@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .block-add-catalog {
   padding-bottom: 50px;
   padding-left: 100px;
@@ -5,6 +6,13 @@
 }
 
 .catalog-title {
+=======
+.catalog {
+  padding: 30px 50px 100px;
+}
+
+.title-add-product {
+>>>>>>> e116c9611d380eece8764d0aabca036aee43da27
   font-size: 24px;
   padding-bottom: 15px;
   font-weight: 600;
@@ -15,6 +23,7 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 .catalog__form {
   padding-bottom: 30px;
 }
@@ -27,3 +36,28 @@
 button {
   outline: none !important;
 }
+=======
+.category-market {
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn__delete {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> e116c9611d380eece8764d0aabca036aee43da27
